@@ -18,9 +18,9 @@ lastname
 <ol>
 <li>GET-metodi: palauttaa kaikki opiskelijat JSON-arrayna</li>
 <li>GET-metodi: palauttaa yhden opiskelijan JSON-objektina, opiskelija valitaan id_student-arvolla</li>
-<li>POST: metodi: ottaa vastaan uuden opiskelijan tiedot</li>
-<li>PUT:metodi: ottaa vastaan opiskelijan muutetut tiedot, opiskelija valitaan id_student-arvolla</li>
-<li>DELETE: metodi poistaa opiskelijan, opiskelija valitaan id_student-arvolla</li>
+<li>POST-metodi: ottaa vastaan uuden opiskelijan tiedot</li>
+<li>PUT-metodi: ottaa vastaan opiskelijan muutetut tiedot, opiskelija valitaan id_student-arvolla</li>
+<li>DELETE-metodi poistaa opiskelijan, opiskelija valitaan id_student-arvolla</li>
 </ol>
 
 ### Model
@@ -33,6 +33,7 @@ lastname
 <li>updateStudent</li>
 <li>deleteStudent</li>
 </ol>
+Kun student controllerin endpointtiin tulee http-request, controlleri kutsuu sopivaa modelin metodia, joka palauttaa sille sopivan datan.
 
 ### App.js
 
