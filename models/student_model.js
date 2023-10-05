@@ -11,8 +11,10 @@ const student={
     getOneStudent: function(id){
         return studentData[id-1];
     },
-    addStudent: function(){
-        return "Lisätään uusi opiskelija (insert into ...)";
+    addStudent: function(newData){
+       // return "Lisätään uusi opiskelija (insert into ...)";
+       let sql="insert into student values("+newData.id_student+","+newData.firstname+");";
+        return sql;
     },
     updateStudent: function(id){
         return "Päivitetään opiskelija, jonka id="+id;
