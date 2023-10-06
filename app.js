@@ -14,7 +14,7 @@ app.listen(port,function(){
 });
 
 app.get('/',function(request,response){
-    response.send("Express API esimerkki ilman tietokantaa palvelimella "+process.env.TEST);
+    response.send("Express API esimerkki ilman tietokantaa palvelimella "+process.env.SERVER);
 });
 
 module.exports=app;
